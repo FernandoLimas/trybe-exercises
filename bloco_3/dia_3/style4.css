@@ -1,0 +1,32 @@
+div:hover{
+   border: 2px solid black;
+   
+}
+div:nth-child(3),h3:nth-child(3){
+   border-color: gold;
+   color: darkmagenta;
+}
+div:nth-child(4), h3:nth-child(4){
+   border-color: red;
+   color:pink;
+}
+div:nth-child(5),h3:nth-child(5){
+   
+   color: blue;
+  
+}
+div:nth-child(6),h3:nth-child(6){
+   border-color: darkblue;
+   color: chartreuse;
+}
+div:nth-child(7),h3:nth-child(7){
+   border-color: cyan;
+   color: gold;
+}
+
+div:nth-child(odd):nth-child(odd){
+   font-style: oblique;
+}
+div:hover:nth-child(5){
+   border: 5px solid peru;
+}
