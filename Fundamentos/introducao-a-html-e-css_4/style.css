@@ -1,0 +1,47 @@
+*{
+    mag
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+header{
+    padding: 50px;
+    background-color: aquamarine;
+}
+nav ul li{
+    display: inline-block;
+    list-style:none;
+    width: 30%;
+    text-align: center;
+    margin-top: 40px;
+}
+.bg a{
+    font-size: 20px;
+    background-color: aqua;
+    text-decoration:none ;
+    border: 1px solid black;
+}
+div a{
+    display: inline-block;
+   float: right;
+   background-color: yellow;
+}
+.stomatopoda{
+}
+.texto{
+    background-color: aqua;
+}
+.referencias{
+    margin-top: 250px;
+}
+.pg{
+    margin-top: 100px;
+}
+h4{
+    text-align: center;
+}
