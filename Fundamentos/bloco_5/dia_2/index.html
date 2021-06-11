@@ -69,48 +69,70 @@
       // COLOQUE SEU CÓDIGO AQUI
       //1
       let tagH1 = document.createElement('h1');
-      tagH1.innerHTML='Exercício 5.2 - JavaScript DOM';
+      tagH1.innerHTML = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(tagH1);
       //2
       let div1 = document.createElement('div');
-      div1.className='main-content';
+      div1.className = 'main-content';
       document.body.appendChild(div1);
       //3
       let divFilhoDv1 = document.createElement('div');
-      divFilhoDv1.className='center-content';
+      divFilhoDv1.className = 'center-content';
       div1.appendChild(divFilhoDv1);
       //4
       let tagP = document.createElement('p');
       divFilhoDv1.appendChild(tagP);
       //5
       let divFilho2 = document.createElement('div');
-      divFilho2.className='left-content';
+      divFilho2.className = 'left-content';
       div1.appendChild(divFilho2);
       //6
       let divFilho3 = document.createElement('div');
-      divFilho3.className='right-content';
+      divFilho3.className = 'right-content';
       div1.appendChild(divFilho3);
       //7
       let image = document.createElement('img');
-      image.src='https://picsum.photos/200';
-      image.className='small-image';
+      image.src = 'https://picsum.photos/200';
+      image.className = 'small-image';
       divFilho2.appendChild(image);
       //8
       let listaUl = document.createElement('ul')
       divFilho3.appendChild(listaUl);
       
-      let array =['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
-      for(let lista in array){
+      let array = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+      for(let lista in array) {
         let li = document.createElement('li');
-        li.innerHTML=array[lista]
+        li.innerHTML = array[lista]
         listaUl.appendChild(li)
       }
       //9
-      for(let i=0; i<3; i++){
+      for (let i=0; i<3; i++) {
         let tagH3 = document.createElement('h3');
         div1.appendChild(tagH3); 
-        tagH3.innerHTML='Trybe' ;
+        tagH3.innerHTML = 'Trybe' ;
        }
+// Alterações e remoções
+//1
+//pode ser tbm querySelector, o elementsByTagName tem que especificar o número do array.ex:[0]
+let classH1 = document.getElementsByTagName('h1')[0];
+classH1.className = 'title';
+//2 addiciona a class às 3 tags h3 com o for
+let tagsH3 = document.getElementsByTagName('h3');
+for (let i = 0; i < 3; i ++) {
+tagsH3[i].className = 'description';
+}
+//3
+let removeDivFilho2 = document.querySelector('.left-content');
+div1.removeChild(removeDivFilho2);
+//4
+let centralizarDivF3 = document.querySelector('.right-content');
+centralizarDivF3.style.marginRight = 'auto';
+//5 filho troca cor do pai
+let trocarCor = document.querySelector('.center-content');
+trocarCor.parentNode.style.backgroundColor='#0f0';
+//6 remove os dois ultimos elementos da ul == lista-2
+listaUl.lastChild.remove()
+listaUl.lastChild.remove()
 
     </script>
   </body>
