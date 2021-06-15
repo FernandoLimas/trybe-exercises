@@ -1,0 +1,56 @@
+body {
+margin: 0;
+padding: 0;
+}
+h1 {
+font-size: xxx-large;
+}
+h2 {
+font-size: xx-large;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+  body{
+    background-color: rgb(214, 252, 252);
+  }
+  h1{
+    text-align: center;
+  }
+
+   p:nth-of-type(1){
+     font-size: 20px;
+     text-align: center;
+   }
+  p:nth-of-type(2){
+    font-size: 20px;
+    text-align: center;
+ }
+ h2{
+   text-align: center;
+ }
+ figure{
+   float: left;
+   width: 48%;
+   margin-right: 5px;
+ }
+}
+
+@media screen and (min-width: 1050px){
+body{
+  background-color: rgb(241, 183, 141);
+  max-width: 1200px;
+}
+figure{
+  width: 28%;
+  margin: 2%;
+}
+
+}
