@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-container{
+  display: flex;
+  background-color: #5B667C ;
+}
+.menu-container {
+  flex-basis: 500px;
+  display: flex;
+  order: 2;
+  flex-grow: 1;
+  align-self: center;
+}
+.menu-container ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.menu-container li{
+  list-style: none;
+  color: white;
+  font-size: 20px;
+}
+.logo-container{
+  flex-basis: 268px;
+  display: flex;
+  justify-content: center;
+  order: 1;
+}
